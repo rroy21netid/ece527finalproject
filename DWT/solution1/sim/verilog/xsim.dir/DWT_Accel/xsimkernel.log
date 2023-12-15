@@ -1,0 +1,4 @@
+Running: xsim.dir/DWT_Accel/xsimk.exe -simmode gui -wdb DWT_Accel.wdb -simrunnum 0 -socket 55892
+Design successfully loaded
+Design Loading Memory Usage: 36408 KB (Peak: 36408 KB)
+Design Loading CPU Usage: 30 ms

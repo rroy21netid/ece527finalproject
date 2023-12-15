@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 14 23:15:26 2023
+# Process ID: 37368
+# Current directory: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/verilog
+# Command line: vivado.exe -notrace -mode batch -source run_vivadosyn.tcl
+# Log file: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/verilog/vivado.log
+# Journal file: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/verilog\vivado.jou
+#-----------------------------------------------------------
+source run_vivadosyn.tcl -notrace

@@ -1,0 +1,1866 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Dec 14 23:17:09 2023" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="bd_0" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="External_Ports_ap_rst_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="ap_rst_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="hls_inst_interrupt">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="interrupt"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_A_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_A_awlen" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_awsize" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_awburst" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_awlock" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_awregion" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_awcache" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_awprot" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_awqos" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_A_awvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_A_awready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_AWREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_A_wdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_WDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_WSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_A_wlast" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_WLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_A_wvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_WVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_A_wready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_WREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_A_bresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_BRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_BRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_A_bvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_BVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_BVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_A_bready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_BREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_BREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_A_araddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_A_arlen" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_arsize" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_arburst" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_arlock" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_arregion" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_arcache" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_arprot" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_arqos" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_A_arvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_A_arready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_ARREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="m_axi_DATA_A_rdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_RDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_A_rresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_RRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_A_rlast" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_RLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_A_rvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_RVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_A_rready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_A_RREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_B_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_B_awlen" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_awsize" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_awburst" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_awlock" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_awregion" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_awcache" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_awprot" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_awqos" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_B_awvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_B_awready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_AWREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_B_wdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_WDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_WSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_B_wlast" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_WLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_B_wvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_WVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_B_wready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_WREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_B_bresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_BRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_BRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_B_bvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_BVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_BVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_B_bready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_BREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_BREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_B_araddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_B_arlen" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_arsize" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_arburst" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_arlock" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_arregion" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_arcache" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_arprot" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_arqos" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_B_arvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_B_arready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_ARREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="m_axi_DATA_B_rdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_RDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_B_rresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_RRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_B_rlast" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_RLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_B_rvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_RVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_B_rready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_B_RREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_C_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_C_awlen" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_awsize" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_awburst" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_awlock" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_awregion" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_awcache" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_awprot" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_awqos" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_C_awvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_C_awready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_AWREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_C_wdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_WDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_WSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_C_wlast" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_WLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_C_wvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_WVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_C_wready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_WREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_C_bresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_BRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_BRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_C_bvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_BVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_BVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_C_bready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_BREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_BREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_C_araddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_C_arlen" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARLEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARLEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_arsize" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARSIZE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARSIZE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_arburst" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARBURST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARBURST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_arlock" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARLOCK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_arregion" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARREGION">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARREGION"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_arcache" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARCACHE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARCACHE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_arprot" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARPROT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARPROT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_arqos" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARQOS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARQOS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_C_arvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_C_arready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_ARREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="m_axi_DATA_C_rdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_RDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_C_rresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_RRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_C_rlast" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RLAST">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_RLAST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axi_DATA_C_rvalid" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_RVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axi_DATA_C_rready" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="m_axi_DATA_C_RREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="5" NAME="s_axi_CTL_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_AWADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_AWADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_CTL_awvalid" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_AWVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_AWVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_CTL_awready" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_AWREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_AWREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="s_axi_CTL_wdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_WDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="s_axi_CTL_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WSTRB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_WSTRB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_CTL_wvalid" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_WVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_CTL_wready" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_WREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="s_axi_CTL_bresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_BRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_BRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_CTL_bvalid" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_BVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_BVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_CTL_bready" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_BREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_BREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="5" NAME="s_axi_CTL_araddr" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_ARADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_ARADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_CTL_arvalid" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_ARVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_ARVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_CTL_arready" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_ARREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_ARREADY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="s_axi_CTL_rdata" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RDATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_RDATA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="s_axi_CTL_rresp" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RRESP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_RRESP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axi_CTL_rvalid" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RVALID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_RVALID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axi_CTL_rready" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RREADY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hls_inst" PORT="s_axi_CTL_RREADY"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="hls_inst_m_axi_DATA_A" DATAWIDTH="32" NAME="m_axi_DATA_A" TYPE="MASTER">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_DATA_A_awaddr"/>
+        <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_DATA_A_awlen"/>
+        <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_DATA_A_awsize"/>
+        <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_DATA_A_awburst"/>
+        <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_DATA_A_awlock"/>
+        <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_DATA_A_awregion"/>
+        <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_DATA_A_awcache"/>
+        <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_DATA_A_awprot"/>
+        <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_DATA_A_awqos"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_DATA_A_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_DATA_A_awready"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_DATA_A_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_DATA_A_wstrb"/>
+        <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_DATA_A_wlast"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_DATA_A_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_DATA_A_wready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_DATA_A_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_DATA_A_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_DATA_A_bready"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_DATA_A_araddr"/>
+        <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_DATA_A_arlen"/>
+        <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_DATA_A_arsize"/>
+        <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_DATA_A_arburst"/>
+        <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_DATA_A_arlock"/>
+        <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_DATA_A_arregion"/>
+        <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_DATA_A_arcache"/>
+        <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_DATA_A_arprot"/>
+        <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_DATA_A_arqos"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_DATA_A_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_DATA_A_arready"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_DATA_A_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_DATA_A_rresp"/>
+        <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_DATA_A_rlast"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_DATA_A_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_DATA_A_rready"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="hls_inst_m_axi_DATA_B" DATAWIDTH="32" NAME="m_axi_DATA_B" TYPE="MASTER">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_DATA_B_awaddr"/>
+        <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_DATA_B_awlen"/>
+        <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_DATA_B_awsize"/>
+        <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_DATA_B_awburst"/>
+        <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_DATA_B_awlock"/>
+        <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_DATA_B_awregion"/>
+        <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_DATA_B_awcache"/>
+        <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_DATA_B_awprot"/>
+        <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_DATA_B_awqos"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_DATA_B_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_DATA_B_awready"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_DATA_B_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_DATA_B_wstrb"/>
+        <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_DATA_B_wlast"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_DATA_B_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_DATA_B_wready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_DATA_B_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_DATA_B_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_DATA_B_bready"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_DATA_B_araddr"/>
+        <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_DATA_B_arlen"/>
+        <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_DATA_B_arsize"/>
+        <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_DATA_B_arburst"/>
+        <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_DATA_B_arlock"/>
+        <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_DATA_B_arregion"/>
+        <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_DATA_B_arcache"/>
+        <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_DATA_B_arprot"/>
+        <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_DATA_B_arqos"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_DATA_B_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_DATA_B_arready"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_DATA_B_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_DATA_B_rresp"/>
+        <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_DATA_B_rlast"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_DATA_B_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_DATA_B_rready"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="hls_inst_m_axi_DATA_C" DATAWIDTH="32" NAME="m_axi_DATA_C" TYPE="MASTER">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_DATA_C_awaddr"/>
+        <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_DATA_C_awlen"/>
+        <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_DATA_C_awsize"/>
+        <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_DATA_C_awburst"/>
+        <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_DATA_C_awlock"/>
+        <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_DATA_C_awregion"/>
+        <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_DATA_C_awcache"/>
+        <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_DATA_C_awprot"/>
+        <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_DATA_C_awqos"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_DATA_C_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_DATA_C_awready"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_DATA_C_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_DATA_C_wstrb"/>
+        <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_DATA_C_wlast"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_DATA_C_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_DATA_C_wready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_DATA_C_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_DATA_C_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_DATA_C_bready"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_DATA_C_araddr"/>
+        <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_DATA_C_arlen"/>
+        <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_DATA_C_arsize"/>
+        <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_DATA_C_arburst"/>
+        <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_DATA_C_arlock"/>
+        <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_DATA_C_arregion"/>
+        <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_DATA_C_arcache"/>
+        <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_DATA_C_arprot"/>
+        <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_DATA_C_arqos"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_DATA_C_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_DATA_C_arready"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_DATA_C_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_DATA_C_rresp"/>
+        <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_DATA_C_rlast"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_DATA_C_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_DATA_C_rready"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_s_axi_CTL" DATAWIDTH="32" NAME="s_axi_CTL" TYPE="SLAVE">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+      <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+      <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ADDR_WIDTH" VALUE="12"/>
+      <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+      <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+      <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+      <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+      <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+      <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+      <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+      <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+      <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+      <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+      <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+      <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+      <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+      <PARAMETER NAME="PHASE" VALUE="0.000"/>
+      <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+      <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+      <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+      <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+      <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_CTL_awaddr"/>
+        <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_CTL_awvalid"/>
+        <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_CTL_awready"/>
+        <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_CTL_wdata"/>
+        <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_CTL_wstrb"/>
+        <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_CTL_wvalid"/>
+        <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_CTL_wready"/>
+        <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_CTL_bresp"/>
+        <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_CTL_bvalid"/>
+        <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_CTL_bready"/>
+        <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_CTL_araddr"/>
+        <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_CTL_arvalid"/>
+        <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_CTL_arready"/>
+        <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_CTL_rdata"/>
+        <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_CTL_rresp"/>
+        <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_CTL_rvalid"/>
+        <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_CTL_rready"/>
+      </PORTMAPS>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_CTL_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_CTL_HIGHADDR" HIGHVALUE="0x00000FFF" INSTANCE="hls_inst" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="s_axi_CTL" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi_CTL"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="hls_inst"/>
+      </PERIPHERALS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="2113339032" FULLNAME="/hls_inst" HWVERSION="1.0" INSTANCE="hls_inst" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DWT_Accel" VLNV="xilinx.com:hls:DWT_Accel:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S_AXI_CTL_ADDR_WIDTH" VALUE="6"/>
+        <PARAMETER NAME="C_S_AXI_CTL_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_ID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_AWUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_ARUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_WUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_RUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_BUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_USER_VALUE" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_PROT_VALUE" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_CACHE_VALUE" VALUE="&quot;0011&quot;"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_ID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_AWUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_ARUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_WUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_RUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_BUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_USER_VALUE" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_PROT_VALUE" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_CACHE_VALUE" VALUE="&quot;0011&quot;"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_ID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_AWUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_ARUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_WUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_RUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_BUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_USER_VALUE" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_PROT_VALUE" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_CACHE_VALUE" VALUE="&quot;0011&quot;"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_ENABLE_ID_PORTS" VALUE="false"/>
+        <PARAMETER NAME="C_M_AXI_DATA_A_ENABLE_USER_PORTS" VALUE="false"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_ENABLE_ID_PORTS" VALUE="false"/>
+        <PARAMETER NAME="C_M_AXI_DATA_B_ENABLE_USER_PORTS" VALUE="false"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_ENABLE_ID_PORTS" VALUE="false"/>
+        <PARAMETER NAME="C_M_AXI_DATA_C_ENABLE_USER_PORTS" VALUE="false"/>
+        <PARAMETER NAME="Component_Name" VALUE="bd_0_hls_inst_0"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="657168"/>
+        <PARAMETER NAME="II" VALUE="x"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_S_AXI_CTL_BASEADDR" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_S_AXI_CTL_HIGHADDR" VALUE="0x00000FFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="s_axi_CTL_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_CTL_AWVALID" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_CTL_AWREADY" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_CTL_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_CTL_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_CTL_WVALID" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_CTL_WREADY" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_CTL_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_CTL_BVALID" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_CTL_BREADY" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="s_axi_CTL_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_CTL_ARVALID" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_CTL_ARREADY" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_CTL_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_CTL_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_CTL_RVALID" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_CTL_RREADY" SIGIS="undef" SIGNAME="hls_inst_s_axi_CTL_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="s_axi_CTL_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000.0" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="External_Ports_ap_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="hls_inst_interrupt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="interrupt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_A_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_A_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_AWLOCK" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_AWREGION" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_AWQOS" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_A_AWVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_A_AWREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_A_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_A_WLAST" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_A_WVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_A_WREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_A_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_A_BVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_A_BREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_A_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_A_ARLEN" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_ARSIZE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_ARBURST" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_A_ARLOCK" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_ARREGION" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_ARCACHE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_A_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_A_ARQOS" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_A_ARVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_A_ARREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="m_axi_DATA_A_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_A_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_A_RLAST" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_A_RVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_A_RREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_A_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_A_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_B_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_B_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_AWLOCK" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_AWREGION" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_AWQOS" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_B_AWVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_B_AWREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_B_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_B_WLAST" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_B_WVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_B_WREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_B_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_B_BVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_B_BREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_B_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_B_ARLEN" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_ARSIZE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_ARBURST" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_B_ARLOCK" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_ARREGION" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_ARCACHE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_B_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_B_ARQOS" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_B_ARVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_B_ARREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="m_axi_DATA_B_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_B_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_B_RLAST" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_B_RVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_B_RREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_B_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_B_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_C_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_C_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_AWLOCK" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_AWREGION" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_AWQOS" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_C_AWVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_C_AWREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_C_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_C_WLAST" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_C_WVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_C_WREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_C_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_C_BVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_C_BREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_DATA_C_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m_axi_DATA_C_ARLEN" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_ARSIZE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_ARBURST" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axi_DATA_C_ARLOCK" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_ARREGION" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARREGION">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_ARCACHE" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_DATA_C_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_DATA_C_ARQOS" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_C_ARVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_C_ARREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="m_axi_DATA_C_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_DATA_C_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_C_RLAST" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_DATA_C_RVALID" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_DATA_C_RREADY" SIGIS="undef" SIGNAME="hls_inst_m_axi_DATA_C_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bd_0_imp" PORT="m_axi_DATA_C_rready"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="External_Interface_s_axi_CTL" DATAWIDTH="32" NAME="s_axi_CTL" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="6"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_CTL_AWADDR"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_CTL_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_CTL_AWREADY"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_CTL_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_CTL_WSTRB"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_CTL_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_CTL_WREADY"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_CTL_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_CTL_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_CTL_BREADY"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_CTL_ARADDR"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_CTL_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_CTL_ARREADY"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_CTL_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_CTL_RRESP"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_CTL_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_CTL_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="hls_inst_m_axi_DATA_A" DATAWIDTH="32" NAME="m_axi_DATA_A" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="MAX_READ_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="MAX_WRITE_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_DATA_A_AWADDR"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_DATA_A_AWLEN"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_DATA_A_AWSIZE"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_DATA_A_AWBURST"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_DATA_A_AWLOCK"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_DATA_A_AWREGION"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_DATA_A_AWCACHE"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_DATA_A_AWPROT"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_DATA_A_AWQOS"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_DATA_A_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_DATA_A_AWREADY"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_DATA_A_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_DATA_A_WSTRB"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_DATA_A_WLAST"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_DATA_A_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_DATA_A_WREADY"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_DATA_A_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_DATA_A_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_DATA_A_BREADY"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_DATA_A_ARADDR"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_DATA_A_ARLEN"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_DATA_A_ARSIZE"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_DATA_A_ARBURST"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_DATA_A_ARLOCK"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_DATA_A_ARREGION"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_DATA_A_ARCACHE"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_DATA_A_ARPROT"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_DATA_A_ARQOS"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_DATA_A_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_DATA_A_ARREADY"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_DATA_A_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_DATA_A_RRESP"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_DATA_A_RLAST"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_DATA_A_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_DATA_A_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="hls_inst_m_axi_DATA_B" DATAWIDTH="32" NAME="m_axi_DATA_B" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="MAX_READ_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="MAX_WRITE_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_DATA_B_AWADDR"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_DATA_B_AWLEN"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_DATA_B_AWSIZE"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_DATA_B_AWBURST"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_DATA_B_AWLOCK"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_DATA_B_AWREGION"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_DATA_B_AWCACHE"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_DATA_B_AWPROT"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_DATA_B_AWQOS"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_DATA_B_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_DATA_B_AWREADY"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_DATA_B_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_DATA_B_WSTRB"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_DATA_B_WLAST"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_DATA_B_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_DATA_B_WREADY"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_DATA_B_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_DATA_B_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_DATA_B_BREADY"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_DATA_B_ARADDR"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_DATA_B_ARLEN"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_DATA_B_ARSIZE"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_DATA_B_ARBURST"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_DATA_B_ARLOCK"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_DATA_B_ARREGION"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_DATA_B_ARCACHE"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_DATA_B_ARPROT"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_DATA_B_ARQOS"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_DATA_B_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_DATA_B_ARREADY"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_DATA_B_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_DATA_B_RRESP"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_DATA_B_RLAST"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_DATA_B_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_DATA_B_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="hls_inst_m_axi_DATA_C" DATAWIDTH="32" NAME="m_axi_DATA_C" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="256"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
+          <PARAMETER NAME="MAX_READ_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="MAX_WRITE_BURST_LENGTH" VALUE="16"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000.0"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="1"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="1"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="1"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="1"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="bd_0_ap_clk_0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_DATA_C_AWADDR"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="m_axi_DATA_C_AWLEN"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="m_axi_DATA_C_AWSIZE"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="m_axi_DATA_C_AWBURST"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="m_axi_DATA_C_AWLOCK"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="m_axi_DATA_C_AWREGION"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="m_axi_DATA_C_AWCACHE"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_DATA_C_AWPROT"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="m_axi_DATA_C_AWQOS"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_DATA_C_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_DATA_C_AWREADY"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_DATA_C_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_DATA_C_WSTRB"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="m_axi_DATA_C_WLAST"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_DATA_C_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_DATA_C_WREADY"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_DATA_C_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_DATA_C_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_DATA_C_BREADY"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_DATA_C_ARADDR"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="m_axi_DATA_C_ARLEN"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="m_axi_DATA_C_ARSIZE"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="m_axi_DATA_C_ARBURST"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="m_axi_DATA_C_ARLOCK"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="m_axi_DATA_C_ARREGION"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="m_axi_DATA_C_ARCACHE"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_DATA_C_ARPROT"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="m_axi_DATA_C_ARQOS"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_DATA_C_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_DATA_C_ARREADY"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_DATA_C_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_DATA_C_RRESP"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="m_axi_DATA_C_RLAST"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_DATA_C_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_DATA_C_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+      <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="m_axi_DATA_A" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="m_axi_DATA_A" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="m_axi_DATA_A"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="m_axi_DATA_B" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="m_axi_DATA_B" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="m_axi_DATA_B"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x44A00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x44A0FFFF" INSTANCE="m_axi_DATA_C" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="m_axi_DATA_C" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="m_axi_DATA_C"/>
+      </MEMORYMAP>
+      <PERIPHERALS/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

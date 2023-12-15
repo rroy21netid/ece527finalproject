@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Dec 13 20:21:23 2023
+| Host         : RonaldRoyPC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_DWT_Accel_0_5'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_DWT_Accel_0_5 (xilinx.com:hls:DWT_Accel:1.0) from (Rev. 2113337381) to (Rev. 2113337402)
+

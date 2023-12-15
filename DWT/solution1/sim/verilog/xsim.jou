@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 13 21:22:27 2023
+# Process ID: 28376
+# Current directory: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/DWT_Accel/xsim_script.tcl}
+# Log file: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/DWT_Accel/xsim_script.tcl
+source DWT_Accel.tcl

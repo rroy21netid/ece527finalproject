@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 13 21:22:24 2023
+# Process ID: 29460
+# Current directory: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog/xsim.dir/DWT_Accel/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/verilog/xsim.dir/DWT_Accel/webtalk/xsim_webtalk.tcl -notrace

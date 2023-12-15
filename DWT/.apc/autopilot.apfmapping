@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="DWT_Accel.c" path="C:\Users\ronal\Documents\ECE527MPs\final_project\DWT\DWT_Accel.c"/>
+    <originFiles name="DWT_Accel.h" path="C:\Users\ronal\Documents\ECE527MPs\final_project\DWT\DWT_Accel.h"/>
+    <originFiles name="accelerator.cpp" path="C:\Users\ronal\Documents\ECE527MPs\final_project\accelerator.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="DWT_Accel_TB.c" path="C:\Users\ronal\Documents\ECE527MPs\final_project\DWT\DWT_Accel_TB.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

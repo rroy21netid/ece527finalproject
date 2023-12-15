@@ -1,0 +1,1800 @@
+INFO-FLOW: Workspace C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1 opened at Thu Dec 14 23:00:56 -0600 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.163 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.202 sec.
+Command     ap_source done; 0.202 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.83 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.177 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.158 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.967 sec.
+Execute   set_part xc7z020-clg400-1 -tool vivado 
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Command     add_library done; 0.179 sec.
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.391 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+Execute   source ./DWT/solution1/directives.tcl 
+Execute     set_directive_array_partition -type cyclic -factor 8 -dim 2 DWT_Accel A_buffer 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredA_buffer cyclic=positionBoolean0type factor=8 dim=2 
+Execute     set_directive_array_partition -type cyclic -factor 8 -dim 2 DWT_Accel B_buffer 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredA_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredB_buffer cyclic=positionBoolean0type factor=8 dim=2 
+Execute     set_directive_array_partition -type cyclic -factor 8 -dim 2 DWT_Accel C_buffer 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredA_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredB_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredC_buffer cyclic=positionBoolean0type factor=8 dim=2 
+Command   ap_source done; 0.274 sec.
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+WARNING: [HLS 200-40] Cannot find source file accelerator.cpp; skipping it.
+INFO: [HLS 200-10] Analyzing design file 'DWT/DWT_Accel.c' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling DWT/DWT_Accel.c as C
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted DWT/DWT_Accel.c 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "DWT/DWT_Accel.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  -o "C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E DWT/DWT_Accel.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c
+Command       clang done; 1.255 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.557 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl=  "C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c"  -o "C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -D__cdecl= C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/useless.bc
+Command       clang done; 0.97 sec.
+INFO-FLOW: Done: GCC PP time: 2.8 seconds per iteration
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredA_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredB_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredC_buffer cyclic=positionBoolean0type factor=8 dim=2 
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Command       ap_source done; 0.119 sec.
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredA_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredB_buffer cyclic=positionBoolean0type factor=8 dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredC_buffer cyclic=positionBoolean0type factor=8 dim=2 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c std=gnu89 -directive=C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.368 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c std=gnu89 -directive=C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.683 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/xilinx-dataflow-lawyer.DWT_Accel.pp.0.c.diag.yml C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -- -std=gnu99 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/xilinx-dataflow-lawyer.DWT_Accel.pp.0.c.out.log 2> C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/xilinx-dataflow-lawyer.DWT_Accel.pp.0.c.err.log 
+Command       ap_eval done; 0.208 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c std=gnu89 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/tidy-3.1.DWT_Accel.pp.0.c.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/tidy-3.1.DWT_Accel.pp.0.c.out.log 2> C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/tidy-3.1.DWT_Accel.pp.0.c.err.log 
+Command         ap_eval done; 0.578 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command         ap_source done; 0.108 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0 > C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/xilinx-legacy-rewriter.DWT_Accel.pp.0.c.out.log 2> C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/xilinx-legacy-rewriter.DWT_Accel.pp.0.c.err.log 
+Command         ap_eval done; 0.187 sec.
+Command       tidy_31 done; 1.099 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pragma.1.c std=gnu89 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pragma.1.c -- -std=gnu89 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.618 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pragma.2.c  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pragma.2.c"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.pragma.2.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.bc
+Command       clang done; 0.998 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.g.bc -hls-opt -except-internalize DWT_Accel -LC:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.566 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 184.258 ; gain = 117.770
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 184.258 ; gain = 117.770
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.pp.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.124 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top DWT_Accel -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.0.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.951 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:30 . Memory (MB): peak = 187.609 ; gain = 121.121
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.1.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:91) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<unsigned short, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, float>' into '__hls_fptoui_float_i16' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:64) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:91) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<unsigned short, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, double>' into '__hls_fptoui_double_i16' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:68) automatically.
+Command         transform done; 0.405 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.192 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 217.039 ; gain = 150.551
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.g.1.bc to C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.1.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.2' (DWT/DWT_Accel.c:227) in function 'IDWT' partially with a factor of 8.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.2.2' (DWT/DWT_Accel.c:256) in function 'IDWT' partially with a factor of 8.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.2' (DWT/DWT_Accel.c:127) in function 'DWT_IR' partially with a factor of 8.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.2.2' (DWT/DWT_Accel.c:155) in function 'DWT_IR' partially with a factor of 8.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.2' (DWT/DWT_Accel.c:57) in function 'DWT_color' partially with a factor of 8.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.2.2' (DWT/DWT_Accel.c:85) in function 'DWT_color' partially with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'A_buffer' (DWT/DWT_Accel.c:5) in dimension 2 with a cyclic factor 8.
+INFO: [XFORM 203-101] Partitioning array 'B_buffer' (DWT/DWT_Accel.c:6) in dimension 2 with a cyclic factor 8.
+INFO: [XFORM 203-101] Partitioning array 'C_buffer' (DWT/DWT_Accel.c:7) in dimension 2 with a cyclic factor 8.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<unsigned short, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, float>' into '__hls_fptoui_float_i16' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:64) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_float_i16' into 'DWT_color' (DWT/DWT_Accel.c:72) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_float_i16' into 'DWT_IR' (DWT/DWT_Accel.c:142) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:68) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:71) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<unsigned short, double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned short, double>' into '__hls_fptoui_double_i16' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:68) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_double_i16' into 'Filter' (DWT/DWT_Accel.c:194) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptoui_float_i16' into 'IDWT' (DWT/DWT_Accel.c:242) automatically.
+Command         transform done; 1.131 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.812 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:33 . Memory (MB): peak = 279.980 ; gain = 213.492
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.2.bc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1' (DWT/DWT_Accel.c:219:20) in function 'IDWT' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.2' (DWT/DWT_Accel.c:247:20) in function 'IDWT' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (DWT/DWT_Accel.c:214:16) in function 'IDWT' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1' (DWT/DWT_Accel.c:49:17) in function 'DWT_color' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.2' (DWT/DWT_Accel.c:77:17) in function 'DWT_color' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (DWT/DWT_Accel.c:44:16) in function 'DWT_color' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1' (DWT/DWT_Accel.c:119:17) in function 'DWT_IR' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.2' (DWT/DWT_Accel.c:147:17) in function 'DWT_IR' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (DWT/DWT_Accel.c:114:16) in function 'DWT_IR' : 
+
+more than one sub loop.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 160 on port 'c' (DWT/DWT_Accel.c:35:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+Command         transform done; 2.112 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 359.035 ; gain = 292.547
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 7.492 sec.
+Command     elaborate done; 17.441 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'DWT_Accel' ...
+Execute       ap_set_top_model DWT_Accel 
+Execute       get_model_list DWT_Accel -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model DWT_Accel 
+Execute       preproc_iomode -model write_image 
+Execute       preproc_iomode -model IDWT 
+Execute       preproc_iomode -model Filter 
+Execute       preproc_iomode -model DWT_IR 
+Execute       preproc_iomode -model DWT_color 
+Execute       preproc_iomode -model read_IR 
+Execute       preproc_iomode -model read_color 
+Execute       get_model_list DWT_Accel -filter all-wo-channel 
+INFO-FLOW: Model list for configure: read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel
+INFO-FLOW: Configuring Module : read_color ...
+Execute       set_default_model read_color 
+Execute       apply_spec_resource_limit read_color 
+INFO-FLOW: Configuring Module : read_IR ...
+Execute       set_default_model read_IR 
+Execute       apply_spec_resource_limit read_IR 
+INFO-FLOW: Configuring Module : DWT_color ...
+Execute       set_default_model DWT_color 
+Execute       apply_spec_resource_limit DWT_color 
+INFO-FLOW: Configuring Module : DWT_IR ...
+Execute       set_default_model DWT_IR 
+Execute       apply_spec_resource_limit DWT_IR 
+INFO-FLOW: Configuring Module : Filter ...
+Execute       set_default_model Filter 
+Execute       apply_spec_resource_limit Filter 
+INFO-FLOW: Configuring Module : IDWT ...
+Execute       set_default_model IDWT 
+Execute       apply_spec_resource_limit IDWT 
+INFO-FLOW: Configuring Module : write_image ...
+Execute       set_default_model write_image 
+Execute       apply_spec_resource_limit write_image 
+INFO-FLOW: Configuring Module : DWT_Accel ...
+Execute       set_default_model DWT_Accel 
+Execute       apply_spec_resource_limit DWT_Accel 
+INFO-FLOW: Model list for preprocess: read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel
+INFO-FLOW: Preprocessing Module: read_color ...
+Execute       set_default_model read_color 
+Execute       cdfg_preprocess -model read_color 
+Execute       rtl_gen_preprocess read_color 
+INFO-FLOW: Preprocessing Module: read_IR ...
+Execute       set_default_model read_IR 
+Execute       cdfg_preprocess -model read_IR 
+Execute       rtl_gen_preprocess read_IR 
+INFO-FLOW: Preprocessing Module: DWT_color ...
+Execute       set_default_model DWT_color 
+Execute       cdfg_preprocess -model DWT_color 
+Execute       rtl_gen_preprocess DWT_color 
+INFO-FLOW: Preprocessing Module: DWT_IR ...
+Execute       set_default_model DWT_IR 
+Execute       cdfg_preprocess -model DWT_IR 
+Execute       rtl_gen_preprocess DWT_IR 
+INFO-FLOW: Preprocessing Module: Filter ...
+Execute       set_default_model Filter 
+Execute       cdfg_preprocess -model Filter 
+Execute       rtl_gen_preprocess Filter 
+INFO-FLOW: Preprocessing Module: IDWT ...
+Execute       set_default_model IDWT 
+Execute       cdfg_preprocess -model IDWT 
+Execute       rtl_gen_preprocess IDWT 
+INFO-FLOW: Preprocessing Module: write_image ...
+Execute       set_default_model write_image 
+Execute       cdfg_preprocess -model write_image 
+Execute       rtl_gen_preprocess write_image 
+INFO-FLOW: Preprocessing Module: DWT_Accel ...
+Execute       set_default_model DWT_Accel 
+Execute       cdfg_preprocess -model DWT_Accel 
+Execute       rtl_gen_preprocess DWT_Accel 
+INFO-FLOW: Model list for synthesis: read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_color' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_color 
+Execute       schedule -model read_color 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 35.186 seconds; current allocated memory: 299.799 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.sched.adb -f 
+INFO-FLOW: Finish scheduling read_color.
+Execute       set_default_model read_color 
+Execute       bind -model read_color 
+BIND OPTION: model=read_color
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.219 seconds; current allocated memory: 300.076 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.bind.adb -f 
+INFO-FLOW: Finish binding read_color.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_IR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model read_IR 
+Execute       schedule -model read_IR 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.158 seconds; current allocated memory: 300.304 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.sched.adb -f 
+INFO-FLOW: Finish scheduling read_IR.
+Execute       set_default_model read_IR 
+Execute       bind -model read_IR 
+BIND OPTION: model=read_IR
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.071 seconds; current allocated memory: 300.573 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.bind.adb -f 
+INFO-FLOW: Finish binding read_IR.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DWT_color' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model DWT_color 
+Execute       schedule -model DWT_color 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1.2'.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_17_write_ln65', DWT/DWT_Accel.c:65) of variable 'tmp_36', DWT/DWT_Accel.c:65 on array 'tempr', DWT/DWT_Accel.c:42 and 'store' operation ('tempr_addr_write_ln64', DWT/DWT_Accel.c:64) of variable 'tmp_34', DWT/DWT_Accel.c:64 on array 'tempr', DWT/DWT_Accel.c:42.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_18_write_ln65', DWT/DWT_Accel.c:65) of variable 'tmp_56_1', DWT/DWT_Accel.c:65 on array 'tempr', DWT/DWT_Accel.c:42 and 'store' operation ('tempr_addr_write_ln64', DWT/DWT_Accel.c:64) of variable 'tmp_34', DWT/DWT_Accel.c:64 on array 'tempr', DWT/DWT_Accel.c:42.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_18_write_ln65', DWT/DWT_Accel.c:65) of variable 'tmp_56_1', DWT/DWT_Accel.c:65 on array 'tempr', DWT/DWT_Accel.c:42 and 'store' operation ('tempr_addr_write_ln64', DWT/DWT_Accel.c:64) of variable 'tmp_34', DWT/DWT_Accel.c:64 on array 'tempr', DWT/DWT_Accel.c:42.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_19_write_ln65', DWT/DWT_Accel.c:65) of variable 'tmp_56_2', DWT/DWT_Accel.c:65 on array 'tempr', DWT/DWT_Accel.c:42 and 'store' operation ('tempr_addr_write_ln64', DWT/DWT_Accel.c:64) of variable 'tmp_34', DWT/DWT_Accel.c:64 on array 'tempr', DWT/DWT_Accel.c:42.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_24_write_ln65', DWT/DWT_Accel.c:65) of variable 'tmp_56_5', DWT/DWT_Accel.c:65 on array 'tempr', DWT/DWT_Accel.c:42 and 'store' operation ('tempr_addr_write_ln64', DWT/DWT_Accel.c:64) of variable 'tmp_34', DWT/DWT_Accel.c:64 on array 'tempr', DWT/DWT_Accel.c:42.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_26_write_ln65', DWT/DWT_Accel.c:65) of variable 'tmp_56_7', DWT/DWT_Accel.c:65 on array 'tempr', DWT/DWT_Accel.c:42 and 'store' operation ('tempr_addr_write_ln64', DWT/DWT_Accel.c:64) of variable 'tmp_34', DWT/DWT_Accel.c:64 on array 'tempr', DWT/DWT_Accel.c:42.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 32.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.2.2'.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_17_write_ln93', DWT/DWT_Accel.c:93) of variable 'tmp_44', DWT/DWT_Accel.c:93 on array 'tempc', DWT/DWT_Accel.c:43 and 'store' operation ('tempc_addr_write_ln92', DWT/DWT_Accel.c:92) of variable 'tmp_42', DWT/DWT_Accel.c:92 on array 'tempc', DWT/DWT_Accel.c:43.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_18_write_ln93', DWT/DWT_Accel.c:93) of variable 'tmp_64_1', DWT/DWT_Accel.c:93 on array 'tempc', DWT/DWT_Accel.c:43 and 'store' operation ('tempc_addr_write_ln92', DWT/DWT_Accel.c:92) of variable 'tmp_42', DWT/DWT_Accel.c:92 on array 'tempc', DWT/DWT_Accel.c:43.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_18_write_ln93', DWT/DWT_Accel.c:93) of variable 'tmp_64_1', DWT/DWT_Accel.c:93 on array 'tempc', DWT/DWT_Accel.c:43 and 'store' operation ('tempc_addr_write_ln92', DWT/DWT_Accel.c:92) of variable 'tmp_42', DWT/DWT_Accel.c:92 on array 'tempc', DWT/DWT_Accel.c:43.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_19_write_ln93', DWT/DWT_Accel.c:93) of variable 'tmp_64_2', DWT/DWT_Accel.c:93 on array 'tempc', DWT/DWT_Accel.c:43 and 'store' operation ('tempc_addr_write_ln92', DWT/DWT_Accel.c:92) of variable 'tmp_42', DWT/DWT_Accel.c:92 on array 'tempc', DWT/DWT_Accel.c:43.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_24_write_ln93', DWT/DWT_Accel.c:93) of variable 'tmp_64_5', DWT/DWT_Accel.c:93 on array 'tempc', DWT/DWT_Accel.c:43 and 'store' operation ('tempc_addr_write_ln92', DWT/DWT_Accel.c:92) of variable 'tmp_42', DWT/DWT_Accel.c:92 on array 'tempc', DWT/DWT_Accel.c:43.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_color' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_26_write_ln93', DWT/DWT_Accel.c:93) of variable 'tmp_64_7', DWT/DWT_Accel.c:93 on array 'tempc', DWT/DWT_Accel.c:43 and 'store' operation ('tempc_addr_write_ln92', DWT/DWT_Accel.c:92) of variable 'tmp_42', DWT/DWT_Accel.c:92 on array 'tempc', DWT/DWT_Accel.c:43.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 32.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.116 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.254 seconds; current allocated memory: 302.779 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.verbose.sched.rpt 
+Command       syn_report done; 0.692 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.sched.adb -f 
+Command       db_write done; 0.174 sec.
+INFO-FLOW: Finish scheduling DWT_color.
+Execute       set_default_model DWT_color 
+Execute       bind -model DWT_color 
+BIND OPTION: model=DWT_color
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.111 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.034 seconds; current allocated memory: 305.459 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.verbose.bind.rpt 
+Command       syn_report done; 0.402 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.bind.adb -f 
+Command       db_write done; 0.144 sec.
+INFO-FLOW: Finish binding DWT_color.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DWT_IR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model DWT_IR 
+Execute       schedule -model DWT_IR 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1.2'.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_27_write_ln135', DWT/DWT_Accel.c:135) of variable 'tmp_52', DWT/DWT_Accel.c:135 on array 'tempr', DWT/DWT_Accel.c:112 and 'store' operation ('tempr_addr_write_ln134', DWT/DWT_Accel.c:134) of variable 'tmp_50', DWT/DWT_Accel.c:134 on array 'tempr', DWT/DWT_Accel.c:112.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_28_write_ln135', DWT/DWT_Accel.c:135) of variable 'tmp_74_1', DWT/DWT_Accel.c:135 on array 'tempr', DWT/DWT_Accel.c:112 and 'store' operation ('tempr_addr_write_ln134', DWT/DWT_Accel.c:134) of variable 'tmp_50', DWT/DWT_Accel.c:134 on array 'tempr', DWT/DWT_Accel.c:112.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_28_write_ln135', DWT/DWT_Accel.c:135) of variable 'tmp_74_1', DWT/DWT_Accel.c:135 on array 'tempr', DWT/DWT_Accel.c:112 and 'store' operation ('tempr_addr_write_ln134', DWT/DWT_Accel.c:134) of variable 'tmp_50', DWT/DWT_Accel.c:134 on array 'tempr', DWT/DWT_Accel.c:112.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_29_write_ln135', DWT/DWT_Accel.c:135) of variable 'tmp_74_2', DWT/DWT_Accel.c:135 on array 'tempr', DWT/DWT_Accel.c:112 and 'store' operation ('tempr_addr_write_ln134', DWT/DWT_Accel.c:134) of variable 'tmp_50', DWT/DWT_Accel.c:134 on array 'tempr', DWT/DWT_Accel.c:112.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_33_write_ln135', DWT/DWT_Accel.c:135) of variable 'tmp_74_5', DWT/DWT_Accel.c:135 on array 'tempr', DWT/DWT_Accel.c:112 and 'store' operation ('tempr_addr_write_ln134', DWT/DWT_Accel.c:134) of variable 'tmp_50', DWT/DWT_Accel.c:134 on array 'tempr', DWT/DWT_Accel.c:112.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.1.2): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1)
+   between 'store' operation ('tempr_addr_36_write_ln135', DWT/DWT_Accel.c:135) of variable 'tmp_74_7', DWT/DWT_Accel.c:135 on array 'tempr', DWT/DWT_Accel.c:112 and 'store' operation ('tempr_addr_write_ln134', DWT/DWT_Accel.c:134) of variable 'tmp_50', DWT/DWT_Accel.c:134 on array 'tempr', DWT/DWT_Accel.c:112.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 32.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.2.2'.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_27_write_ln163', DWT/DWT_Accel.c:163) of variable 'tmp_60', DWT/DWT_Accel.c:163 on array 'tempc', DWT/DWT_Accel.c:113 and 'store' operation ('tempc_addr_write_ln162', DWT/DWT_Accel.c:162) of variable 'tmp_58', DWT/DWT_Accel.c:162 on array 'tempc', DWT/DWT_Accel.c:113.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_28_write_ln163', DWT/DWT_Accel.c:163) of variable 'tmp_82_1', DWT/DWT_Accel.c:163 on array 'tempc', DWT/DWT_Accel.c:113 and 'store' operation ('tempc_addr_write_ln162', DWT/DWT_Accel.c:162) of variable 'tmp_58', DWT/DWT_Accel.c:162 on array 'tempc', DWT/DWT_Accel.c:113.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_28_write_ln163', DWT/DWT_Accel.c:163) of variable 'tmp_82_1', DWT/DWT_Accel.c:163 on array 'tempc', DWT/DWT_Accel.c:113 and 'store' operation ('tempc_addr_write_ln162', DWT/DWT_Accel.c:162) of variable 'tmp_58', DWT/DWT_Accel.c:162 on array 'tempc', DWT/DWT_Accel.c:113.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_29_write_ln163', DWT/DWT_Accel.c:163) of variable 'tmp_82_2', DWT/DWT_Accel.c:163 on array 'tempc', DWT/DWT_Accel.c:113 and 'store' operation ('tempc_addr_write_ln162', DWT/DWT_Accel.c:162) of variable 'tmp_58', DWT/DWT_Accel.c:162 on array 'tempc', DWT/DWT_Accel.c:113.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_33_write_ln163', DWT/DWT_Accel.c:163) of variable 'tmp_82_5', DWT/DWT_Accel.c:163 on array 'tempc', DWT/DWT_Accel.c:113 and 'store' operation ('tempc_addr_write_ln162', DWT/DWT_Accel.c:162) of variable 'tmp_58', DWT/DWT_Accel.c:162 on array 'tempc', DWT/DWT_Accel.c:113.
+WARNING: [SCHED 204-68] The II Violation in module 'DWT_IR' (Loop: Loop 1.2.2): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1)
+   between 'store' operation ('tempc_addr_36_write_ln163', DWT/DWT_Accel.c:163) of variable 'tmp_82_7', DWT/DWT_Accel.c:163 on array 'tempc', DWT/DWT_Accel.c:113 and 'store' operation ('tempc_addr_write_ln162', DWT/DWT_Accel.c:162) of variable 'tmp_58', DWT/DWT_Accel.c:162 on array 'tempc', DWT/DWT_Accel.c:113.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 32.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.882 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.509 seconds; current allocated memory: 307.620 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.verbose.sched.rpt 
+Command       syn_report done; 0.649 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.sched.adb -f 
+Command       db_write done; 0.171 sec.
+INFO-FLOW: Finish scheduling DWT_IR.
+Execute       set_default_model DWT_IR 
+Execute       bind -model DWT_IR 
+BIND OPTION: model=DWT_IR
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.181 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.061 seconds; current allocated memory: 310.231 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.verbose.bind.rpt 
+Command       syn_report done; 0.611 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.bind.adb -f 
+Command       db_write done; 0.169 sec.
+INFO-FLOW: Finish binding DWT_IR.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Filter 
+Execute       schedule -model Filter 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.908 seconds; current allocated memory: 310.626 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.sched.adb -f 
+INFO-FLOW: Finish scheduling Filter.
+Execute       set_default_model Filter 
+Execute       bind -model Filter 
+BIND OPTION: model=Filter
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.166 seconds; current allocated memory: 311.104 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.verbose.bind.rpt 
+Command       syn_report done; 0.154 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.bind.adb -f 
+INFO-FLOW: Finish binding Filter.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'IDWT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model IDWT 
+Execute       schedule -model IDWT 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1.2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('column_load_8', DWT/DWT_Accel.c:234) on array 'column', DWT/DWT_Accel.c:211 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'column'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 29.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.2.2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('row_load_8', DWT/DWT_Accel.c:263) on array 'row', DWT/DWT_Accel.c:210 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'row'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 29.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.031 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.293 seconds; current allocated memory: 313.343 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.verbose.sched.rpt 
+Command       syn_report done; 0.383 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.sched.adb -f 
+Command       db_write done; 0.118 sec.
+INFO-FLOW: Finish scheduling IDWT.
+Execute       set_default_model IDWT 
+Execute       bind -model IDWT 
+BIND OPTION: model=IDWT
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.111 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 316.228 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.verbose.bind.rpt 
+Command       syn_report done; 0.419 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.bind.adb -f 
+Command       db_write done; 0.15 sec.
+INFO-FLOW: Finish binding IDWT.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model write_image 
+Execute       schedule -model write_image 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.646 seconds; current allocated memory: 316.435 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.sched.adb -f 
+INFO-FLOW: Finish scheduling write_image.
+Execute       set_default_model write_image 
+Execute       bind -model write_image 
+BIND OPTION: model=write_image
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.118 seconds; current allocated memory: 316.672 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.verbose.bind.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.bind.adb -f 
+INFO-FLOW: Finish binding write_image.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DWT_Accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model DWT_Accel 
+Execute       schedule -model DWT_Accel 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.145 seconds; current allocated memory: 316.792 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.verbose.sched.rpt 
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.sched.adb -f 
+INFO-FLOW: Finish scheduling DWT_Accel.
+Execute       set_default_model DWT_Accel 
+Execute       bind -model DWT_Accel 
+BIND OPTION: model=DWT_Accel
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.958 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.026 seconds; current allocated memory: 317.383 MB.
+Execute       syn_report -verbosereport -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.verbose.bind.rpt 
+Command       syn_report done; 0.344 sec.
+Execute       db_write -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.bind.adb -f 
+INFO-FLOW: Finish binding DWT_Accel.
+Execute       get_model_list DWT_Accel -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess read_color 
+Execute       rtl_gen_preprocess read_IR 
+Execute       rtl_gen_preprocess DWT_color 
+Execute       rtl_gen_preprocess DWT_IR 
+Execute       rtl_gen_preprocess Filter 
+Execute       rtl_gen_preprocess IDWT 
+Execute       rtl_gen_preprocess write_image 
+Execute       rtl_gen_preprocess DWT_Accel 
+INFO-FLOW: Model list for RTL generation: read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_color' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model read_color -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_color'.
+INFO: [HLS 200-111]  Elapsed time: 0.817 seconds; current allocated memory: 318.155 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_color -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/read_color -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl read_color -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/read_color 
+Execute       gen_rtl read_color -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/read_color 
+Execute       syn_report -csynth -model read_color -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/read_color_csynth.rpt 
+Execute       syn_report -rtlxml -model read_color -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/read_color_csynth.xml 
+Execute       syn_report -verbosereport -model read_color -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.verbose.rpt 
+Execute       db_write -model read_color -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.adb 
+Execute       gen_tb_info read_color -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'read_IR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model read_IR -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'read_IR'.
+INFO: [HLS 200-111]  Elapsed time: 17.314 seconds; current allocated memory: 318.819 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl read_IR -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/read_IR -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl read_IR -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/read_IR 
+Execute       gen_rtl read_IR -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/read_IR 
+Execute       syn_report -csynth -model read_IR -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/read_IR_csynth.rpt 
+Execute       syn_report -rtlxml -model read_IR -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/read_IR_csynth.xml 
+Execute       syn_report -verbosereport -model read_IR -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.verbose.rpt 
+Execute       db_write -model read_IR -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.adb 
+Execute       gen_tb_info read_IR -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DWT_color' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Command       get_config_rtl done; 0.102 sec.
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model DWT_color -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_uitofp_32ns_32_6_1' to 'DWT_Accel_uitofp_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_fptrunc_64ns_32_2_1' to 'DWT_Accel_fptrunccud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_fpext_32ns_64_2_1' to 'DWT_Accel_fpext_3dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'DWT_Accel_dadddsueOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_dmul_64ns_64ns_64_6_max_dsp_1' to 'DWT_Accel_dmul_64fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_dcmp_64ns_64ns_1_2_1' to 'DWT_Accel_dcmp_64g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_sitodp_32ns_64_6_1' to 'DWT_Accel_sitodp_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_mux_832_16_1_1' to 'DWT_Accel_mux_832ibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dadddsueOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dcmp_64g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dmul_64fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_fpext_3dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_fptrunccud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_mux_832ibs': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_sitodp_hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_uitofp_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DWT_color'.
+Command       create_rtl_model done; 0.268 sec.
+INFO: [HLS 200-111]  Elapsed time: 13.761 seconds; current allocated memory: 323.659 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl DWT_color -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/DWT_color -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl DWT_color -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/DWT_color 
+Execute       gen_rtl DWT_color -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/DWT_color 
+Execute       syn_report -csynth -model DWT_color -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/DWT_color_csynth.rpt 
+Execute       syn_report -rtlxml -model DWT_color -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/DWT_color_csynth.xml 
+Execute       syn_report -verbosereport -model DWT_color -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.verbose.rpt 
+Command       syn_report done; 0.565 sec.
+Execute       db_write -model DWT_color -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.adb 
+Command       db_write done; 0.375 sec.
+Execute       gen_tb_info DWT_color -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DWT_IR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model DWT_IR -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dadddsueOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dmul_64fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_fpext_3dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_fptrunccud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_mux_832ibs': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_uitofp_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DWT_IR'.
+Command       create_rtl_model done; 0.161 sec.
+INFO: [HLS 200-111]  Elapsed time: 149.895 seconds; current allocated memory: 328.682 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl DWT_IR -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/DWT_IR -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl DWT_IR -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/DWT_IR 
+Execute       gen_rtl DWT_IR -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/DWT_IR 
+Execute       syn_report -csynth -model DWT_IR -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/DWT_IR_csynth.rpt 
+Execute       syn_report -rtlxml -model DWT_IR -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/DWT_IR_csynth.xml 
+Execute       syn_report -verbosereport -model DWT_IR -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.verbose.rpt 
+Command       syn_report done; 0.395 sec.
+Execute       db_write -model DWT_IR -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.adb 
+Command       db_write done; 0.269 sec.
+Execute       gen_tb_info DWT_IR -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Filter -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_dadd_64ns_64ns_64_5_full_dsp_1' to 'DWT_Accel_dadd_64jbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dadd_64jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dmul_64fYi': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_mux_832ibs': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_sitodp_hbi': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Filter'.
+INFO: [HLS 200-111]  Elapsed time: 135.992 seconds; current allocated memory: 330.006 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Filter -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/Filter -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl Filter -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/Filter 
+Execute       gen_rtl Filter -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/Filter 
+Execute       syn_report -csynth -model Filter -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/Filter_csynth.rpt 
+Execute       syn_report -rtlxml -model Filter -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/Filter_csynth.xml 
+Execute       syn_report -verbosereport -model Filter -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.verbose.rpt 
+Execute       db_write -model Filter -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.adb 
+Execute       gen_tb_info Filter -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'IDWT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model IDWT -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_dsub_64ns_64ns_64_5_full_dsp_1' to 'DWT_Accel_dsub_64kbM' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dadd_64jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dmul_64fYi': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_dsub_64kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_fpext_3dEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_fptrunccud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_mux_832ibs': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_uitofp_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'IDWT'.
+Command       create_rtl_model done; 0.203 sec.
+INFO: [HLS 200-111]  Elapsed time: 19.649 seconds; current allocated memory: 334.083 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl IDWT -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/IDWT -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl IDWT -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/IDWT 
+Execute       gen_rtl IDWT -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/IDWT 
+Execute       syn_report -csynth -model IDWT -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/IDWT_csynth.rpt 
+Command       syn_report done; 0.107 sec.
+Execute       syn_report -rtlxml -model IDWT -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/IDWT_csynth.xml 
+Execute       syn_report -verbosereport -model IDWT -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.verbose.rpt 
+Command       syn_report done; 0.431 sec.
+Execute       db_write -model IDWT -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.adb 
+Command       db_write done; 0.277 sec.
+Execute       gen_tb_info IDWT -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model write_image -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'DWT_Accel_mux_832ibs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_image'.
+INFO: [HLS 200-111]  Elapsed time: 140.491 seconds; current allocated memory: 335.164 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl write_image -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/write_image -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl write_image -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/write_image 
+Execute       gen_rtl write_image -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/write_image 
+Execute       syn_report -csynth -model write_image -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/write_image_csynth.rpt 
+Execute       syn_report -rtlxml -model write_image -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/write_image_csynth.xml 
+Execute       syn_report -verbosereport -model write_image -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.verbose.rpt 
+Execute       db_write -model write_image -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.adb 
+Command       db_write done; 0.15 sec.
+Execute       gen_tb_info write_image -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DWT_Accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model DWT_Accel -vendor xilinx -mg_file C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'DWT_Accel/DATA_A' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DWT_Accel/DATA_B' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DWT_Accel/DATA_C' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DWT_Accel/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DWT_Accel/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DWT_Accel/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DWT_Accel' to 's_axilite & ap_ctrl_hs' (register).
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'b' and 'c' to AXI-Lite port CTL.
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_0' to 'DWT_Accel_A_buffelbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_1' to 'DWT_Accel_A_buffemb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_2' to 'DWT_Accel_A_buffencg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_3' to 'DWT_Accel_A_buffeocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_4' to 'DWT_Accel_A_buffepcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_5' to 'DWT_Accel_A_buffeqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_6' to 'DWT_Accel_A_buffercU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_A_buffer_7' to 'DWT_Accel_A_buffesc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_0' to 'DWT_Accel_B_buffetde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_1' to 'DWT_Accel_B_buffeudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_2' to 'DWT_Accel_B_buffevdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_3' to 'DWT_Accel_B_buffewdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_4' to 'DWT_Accel_B_buffexdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_5' to 'DWT_Accel_B_buffeyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_6' to 'DWT_Accel_B_buffezec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_B_buffer_7' to 'DWT_Accel_B_buffeAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_0' to 'DWT_Accel_C_buffeBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_1' to 'DWT_Accel_C_buffeCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_2' to 'DWT_Accel_C_buffeDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_3' to 'DWT_Accel_C_buffeEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_4' to 'DWT_Accel_C_buffeFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_5' to 'DWT_Accel_C_buffeGfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_6' to 'DWT_Accel_C_buffeHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DWT_Accel_C_buffer_7' to 'DWT_Accel_C_buffeIfE' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DWT_Accel'.
+Command       create_rtl_model done; 0.437 sec.
+INFO: [HLS 200-111]  Elapsed time: 12.024 seconds; current allocated memory: 338.172 MB.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       gen_rtl DWT_Accel -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/systemc/DWT_Accel -synmodules read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel 
+Execute       gen_rtl DWT_Accel -istop -style xilinx -f -lang vhdl -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/vhdl/DWT_Accel 
+Execute       gen_rtl DWT_Accel -istop -style xilinx -f -lang vlog -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/verilog/DWT_Accel 
+Execute       syn_report -csynth -model DWT_Accel -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/DWT_Accel_csynth.rpt 
+Execute       syn_report -rtlxml -model DWT_Accel -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/syn/report/DWT_Accel_csynth.xml 
+Execute       syn_report -verbosereport -model DWT_Accel -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.verbose.rpt 
+Command       syn_report done; 0.682 sec.
+Execute       db_write -model DWT_Accel -f -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.adb 
+Command       db_write done; 0.122 sec.
+Execute       gen_tb_info DWT_Accel -p C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel 
+Execute       export_constraint_db -f -tool general -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+Execute       syn_report -designview -model DWT_Accel -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.design.xml 
+Command       syn_report done; 0.324 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model DWT_Accel -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model DWT_Accel -o C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks DWT_Accel 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain DWT_Accel 
+INFO-FLOW: Model list for RTL component generation: read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel
+INFO-FLOW: Handling components in module [read_color] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+INFO-FLOW: Handling components in module [read_IR] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+INFO-FLOW: Handling components in module [DWT_color] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+INFO-FLOW: Found component DWT_Accel_uitofp_bkb.
+INFO-FLOW: Append model DWT_Accel_uitofp_bkb
+INFO-FLOW: Found component DWT_Accel_fptrunccud.
+INFO-FLOW: Append model DWT_Accel_fptrunccud
+INFO-FLOW: Found component DWT_Accel_fpext_3dEe.
+INFO-FLOW: Append model DWT_Accel_fpext_3dEe
+INFO-FLOW: Found component DWT_Accel_dadddsueOg.
+INFO-FLOW: Append model DWT_Accel_dadddsueOg
+INFO-FLOW: Found component DWT_Accel_dmul_64fYi.
+INFO-FLOW: Append model DWT_Accel_dmul_64fYi
+INFO-FLOW: Found component DWT_Accel_dcmp_64g8j.
+INFO-FLOW: Append model DWT_Accel_dcmp_64g8j
+INFO-FLOW: Found component DWT_Accel_sitodp_hbi.
+INFO-FLOW: Append model DWT_Accel_sitodp_hbi
+INFO-FLOW: Found component DWT_Accel_mux_832ibs.
+INFO-FLOW: Append model DWT_Accel_mux_832ibs
+INFO-FLOW: Found component DWT_color_row.
+INFO-FLOW: Append model DWT_color_row
+INFO-FLOW: Found component DWT_color_column.
+INFO-FLOW: Append model DWT_color_column
+INFO-FLOW: Found component DWT_color_tempr.
+INFO-FLOW: Append model DWT_color_tempr
+INFO-FLOW: Found component DWT_color_tempc.
+INFO-FLOW: Append model DWT_color_tempc
+INFO-FLOW: Handling components in module [DWT_IR] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+INFO-FLOW: Handling components in module [Filter] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+INFO-FLOW: Found component DWT_Accel_dadd_64jbC.
+INFO-FLOW: Append model DWT_Accel_dadd_64jbC
+INFO-FLOW: Handling components in module [IDWT] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+INFO-FLOW: Found component DWT_Accel_dsub_64kbM.
+INFO-FLOW: Append model DWT_Accel_dsub_64kbM
+INFO-FLOW: Found component IDWT_tempr.
+INFO-FLOW: Append model IDWT_tempr
+INFO-FLOW: Found component IDWT_tempc.
+INFO-FLOW: Append model IDWT_tempc
+INFO-FLOW: Handling components in module [write_image] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+INFO-FLOW: Handling components in module [DWT_Accel] ... 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+INFO-FLOW: Found component DWT_Accel_A_buffelbW.
+INFO-FLOW: Append model DWT_Accel_A_buffelbW
+INFO-FLOW: Found component DWT_Accel_CTL_s_axi.
+INFO-FLOW: Append model DWT_Accel_CTL_s_axi
+INFO-FLOW: Found component DWT_Accel_DATA_A_m_axi.
+INFO-FLOW: Append model DWT_Accel_DATA_A_m_axi
+INFO-FLOW: Found component DWT_Accel_DATA_B_m_axi.
+INFO-FLOW: Append model DWT_Accel_DATA_B_m_axi
+INFO-FLOW: Found component DWT_Accel_DATA_C_m_axi.
+INFO-FLOW: Append model DWT_Accel_DATA_C_m_axi
+INFO-FLOW: Append model read_color
+INFO-FLOW: Append model read_IR
+INFO-FLOW: Append model DWT_color
+INFO-FLOW: Append model DWT_IR
+INFO-FLOW: Append model Filter
+INFO-FLOW: Append model IDWT
+INFO-FLOW: Append model write_image
+INFO-FLOW: Append model DWT_Accel
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: DWT_Accel_uitofp_bkb DWT_Accel_fptrunccud DWT_Accel_fpext_3dEe DWT_Accel_dadddsueOg DWT_Accel_dmul_64fYi DWT_Accel_dcmp_64g8j DWT_Accel_sitodp_hbi DWT_Accel_mux_832ibs DWT_color_row DWT_color_column DWT_color_tempr DWT_color_tempc DWT_Accel_dadd_64jbC DWT_Accel_dsub_64kbM IDWT_tempr IDWT_tempc DWT_Accel_A_buffelbW DWT_Accel_CTL_s_axi DWT_Accel_DATA_A_m_axi DWT_Accel_DATA_B_m_axi DWT_Accel_DATA_C_m_axi read_color read_IR DWT_color DWT_IR Filter IDWT write_image DWT_Accel
+INFO-FLOW: To file: write model DWT_Accel_uitofp_bkb
+INFO-FLOW: To file: write model DWT_Accel_fptrunccud
+INFO-FLOW: To file: write model DWT_Accel_fpext_3dEe
+INFO-FLOW: To file: write model DWT_Accel_dadddsueOg
+INFO-FLOW: To file: write model DWT_Accel_dmul_64fYi
+INFO-FLOW: To file: write model DWT_Accel_dcmp_64g8j
+INFO-FLOW: To file: write model DWT_Accel_sitodp_hbi
+INFO-FLOW: To file: write model DWT_Accel_mux_832ibs
+INFO-FLOW: To file: write model DWT_color_row
+INFO-FLOW: To file: write model DWT_color_column
+INFO-FLOW: To file: write model DWT_color_tempr
+INFO-FLOW: To file: write model DWT_color_tempc
+INFO-FLOW: To file: write model DWT_Accel_dadd_64jbC
+INFO-FLOW: To file: write model DWT_Accel_dsub_64kbM
+INFO-FLOW: To file: write model IDWT_tempr
+INFO-FLOW: To file: write model IDWT_tempc
+INFO-FLOW: To file: write model DWT_Accel_A_buffelbW
+INFO-FLOW: To file: write model DWT_Accel_CTL_s_axi
+INFO-FLOW: To file: write model DWT_Accel_DATA_A_m_axi
+INFO-FLOW: To file: write model DWT_Accel_DATA_B_m_axi
+INFO-FLOW: To file: write model DWT_Accel_DATA_C_m_axi
+INFO-FLOW: To file: write model read_color
+INFO-FLOW: To file: write model read_IR
+INFO-FLOW: To file: write model DWT_color
+INFO-FLOW: To file: write model DWT_IR
+INFO-FLOW: To file: write model Filter
+INFO-FLOW: To file: write model IDWT
+INFO-FLOW: To file: write model write_image
+INFO-FLOW: To file: write model DWT_Accel
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.153 sec.
+Command       ap_source done; 0.153 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'DWT_color_row_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'DWT_color_column_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'DWT_color_tempr_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'DWT_color_tempc_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 7.829 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 1.139 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'IDWT_tempr_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'IDWT_tempc_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 1.975 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'DWT_Accel_A_buffelbW_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         source ./CTL.slave.tcl 
+Command         ap_source done; 0.114 sec.
+Execute         is_m_axi_addr64 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 2.76 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.178 sec.
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.304 sec.
+Command       ap_source done; 0.304 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=DWT_Accel xml_exists=0
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 3.598 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Command       ap_source done; 0.262 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.983 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.588 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.164 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Command       ap_source done; 0.101 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Command       ap_source done; 0.104 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Command       ap_source done; 0.103 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Command       ap_source done; 0.127 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Command       ap_source done; 0.108 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Command       ap_source done; 0.11 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.359 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.128 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Command       ap_source done; 0.147 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Command       ap_source done; 0.125 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Command       ap_source done; 0.154 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Command       ap_source done; 0.166 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.122 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command       ap_source done; 0.136 sec.
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=29 #gSsdmPorts=0
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Command       ap_source done; 0.224 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.127 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.245 sec.
+Execute       get_config_export -xo 
+Command       get_config_export done; 0.259 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command       ap_source done; 0.17 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.dataonly.tcl 
+Command       ap_source done; 0.134 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.dataonly.tcl 
+Command       ap_source done; 0.241 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command       ap_source done; 0.17 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command       ap_source done; 0.238 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command       ap_source done; 0.127 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.231 sec.
+Execute       get_config_sdx -target 
+Command       get_config_sdx done; 0.282 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Command       ap_source done; 0.281 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.dataonly.tcl 
+Command       ap_source done; 0.323 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.28 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+Execute       sc_get_clocks DWT_Accel 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command       ap_source done; 0.25 sec.
+Execute       get_config_debug -directory 
+Command       get_config_debug done; 0.124 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_dadd_3_full_dsp_64_ip.tcl 
+Command       ap_source done; 0.197 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_dadddsub_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_dcmp_0_no_dsp_64_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_dsub_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_sitodp_4_no_dsp_32_ip.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/misc/DWT_Accel_ap_uitofp_4_no_dsp_32_ip.tcl 
+Command       ap_source done; 0.142 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.tbgen.tcl 
+Command       ap_source done; 0.225 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.tbgen.tcl 
+Command       ap_source done; 0.202 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.tbgen.tcl 
+Command       ap_source done; 0.188 sec.
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.tbgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.tbgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.tbgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.tbgen.tcl 
+Execute       source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:10:36 . Memory (MB): peak = 451.699 ; gain = 385.211
+INFO: [VHDL 208-304] Generating VHDL RTL for DWT_Accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for DWT_Accel.
+Command     autosyn done; 601.372 sec.
+Command   csynth_design done; 619.293 sec.
+Command ap_source done; 622.999 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1 opened at Thu Dec 14 23:11:54 -0600 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.207 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.172 sec.
+Command     ap_source done; 0.172 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.674 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.207 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.047 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.749 sec.
+Execute   export_design -flow syn -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Command     get_config_export done; 0.104 sec.
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -flow syn -rtl verilog
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.175 sec.
+Command     ap_source done; 0.176 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.151 sec.
+Command     ap_source done; 0.151 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=DWT_Accel xml_exists=1
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command     ap_source done; 0.102 sec.
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 2.967 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.743 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.622 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.223 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source done; 0.2 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Command     ap_source done; 0.103 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Command     ap_source done; 0.154 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Command     ap_source done; 0.182 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Command     ap_source done; 0.101 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD:       copying IP vlog from C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.dataonly.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.dataonly.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Command     get_config_sdx done; 0.104 sec.
+Execute     get_config_debug -directory 
+Command     get_config_debug done; 0.15 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=DWT_Accel
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=DWT_Accel
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source done; 0.109 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+Command     ap_source done; 0.113 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.132 sec.
+Command     ap_source done; 0.132 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:CMD:   auto_impl: eval: -tool vivado -flow syn -rtl verilog
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.134 sec.
+Command     ap_source done; 0.134 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.13 sec.
+Command     ap_source done; 0.13 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/verilog
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_color.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/read_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_color.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 2.187 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_IR.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/Filter.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.273 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/IDWT.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.309 sec.
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/write_image.compgen.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.constraint.tcl 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/DWT_Accel.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.131 sec.
+Command     ap_source done; 0.131 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     get_config_export -vivado_report_level 
+Execute     get_config_export -vivado_ip_cache 
+Execute     get_config_export -vivado_enable_slr_assignment 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     get_config_export -vivado_bd_cell_properties 
+Execute     get_config_export -vivado_synth_design_args 
+Execute     source C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_synth_strategy 
+Execute     get_config_export -vivado_synth_run_properties 
+INFO-FLOW: DBG:CMD: auto_impl: vlog syn exec C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/impl/verilog/implsyn.bat
+Command   export_design done; 1043.01 sec.
+Command ap_source done; 1044.89 sec.
+Execute cleanup_all 

@@ -1,0 +1,19 @@
+
+
+Implementation tool: Xilinx Vivado v.2019.1
+Project:             DWT
+Solution:            solution1
+Device target:       xc7z020-clg400-1
+Report date:         Thu Dec 14 23:29:03 -0600 2023
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:          14106
+FF:           15749
+DSP:            103
+BRAM:           119
+SRL:            216
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    8.922
+Timing met

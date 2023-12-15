@@ -1,0 +1,33 @@
+20:51:59 **** Build of configuration Debug for project final_dwt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:441:2: warning: implicit declaration of function 'Xil_L1DCacheFlush'; did you mean 'Xil_DCacheFlush'? [-Wimplicit-function-declaration]
+  Xil_L1DCacheFlush();
+  ^~~~~~~~~~~~~~~~~
+  Xil_DCacheFlush
+../src/main.c:442:2: warning: implicit declaration of function 'Xil_L2CacheFlush'; did you mean 'Xil_DCacheFlush'? [-Wimplicit-function-declaration]
+  Xil_L2CacheFlush();
+  ^~~~~~~~~~~~~~~~
+  Xil_DCacheFlush
+../src/main.c:470:6: warning: unused variable 'tt' [-Wunused-variable]
+  u64 tt=0;
+      ^~
+../src/main.c:336:6: warning: unused variable 'ret' [-Wunused-variable]
+  int ret = 0;
+      ^~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+make: *** No rule to make target 'C:/Users/ronal/Documents/ECE527MPs/final_project/final_project/final_project.sdk/final_dwt/src/upng.c', needed by 'upng.o'.  Stop.
+
+20:52:00 Build Finished (took 839ms)
+

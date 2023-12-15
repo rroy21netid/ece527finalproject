@@ -1,0 +1,224 @@
+
+
+================================================================
+== Vivado HLS Report for 'DWT_Accel'
+================================================================
+* Date:           Thu Dec 14 23:01:26 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        DWT
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.348|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+---------+--------+---------+---------+
+    |      Latency     |     Interval     | Pipeline|
+    |   min  |   max   |   min  |   max   |   Type  |
+    +--------+---------+--------+---------+---------+
+    |  657168|  2578048|  657168|  2578048|   none  |
+    +--------+---------+--------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 2
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%c_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %c)"   --->   Operation 11 'read' 'c_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%b_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %b)"   --->   Operation 12 'read' 'b_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%a_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %a)"   --->   Operation 13 'read' 'a_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%c5 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %c_read, i32 1, i32 31)"   --->   Operation 14 'partselect' 'c5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%b3 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %b_read, i32 1, i32 31)"   --->   Operation 15 'partselect' 'b3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%a1 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %a_read, i32 1, i32 31)"   --->   Operation 16 'partselect' 'a1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%A_buffer_0 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 17 'alloca' 'A_buffer_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%A_buffer_1 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 18 'alloca' 'A_buffer_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%A_buffer_2 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 19 'alloca' 'A_buffer_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%A_buffer_3 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 20 'alloca' 'A_buffer_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%A_buffer_4 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 21 'alloca' 'A_buffer_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%A_buffer_5 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 22 'alloca' 'A_buffer_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%A_buffer_6 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 23 'alloca' 'A_buffer_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%A_buffer_7 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:5]   --->   Operation 24 'alloca' 'A_buffer_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%B_buffer_0 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 25 'alloca' 'B_buffer_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%B_buffer_1 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 26 'alloca' 'B_buffer_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%B_buffer_2 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 27 'alloca' 'B_buffer_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%B_buffer_3 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 28 'alloca' 'B_buffer_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%B_buffer_4 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 29 'alloca' 'B_buffer_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%B_buffer_5 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 30 'alloca' 'B_buffer_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%B_buffer_6 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 31 'alloca' 'B_buffer_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%B_buffer_7 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:6]   --->   Operation 32 'alloca' 'B_buffer_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%C_buffer_0 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 33 'alloca' 'C_buffer_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%C_buffer_1 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 34 'alloca' 'C_buffer_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%C_buffer_2 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 35 'alloca' 'C_buffer_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%C_buffer_3 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 36 'alloca' 'C_buffer_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%C_buffer_4 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 37 'alloca' 'C_buffer_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%C_buffer_5 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 38 'alloca' 'C_buffer_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%C_buffer_6 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 39 'alloca' 'C_buffer_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%C_buffer_7 = alloca [2400 x i16], align 2" [DWT/DWT_Accel.c:7]   --->   Operation 40 'alloca' 'C_buffer_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [2/2] (0.00ns)   --->   "call fastcc void @read_color(i16* %DATA_A, i31 %a1, [2400 x i16]* nocapture %A_buffer_0, [2400 x i16]* nocapture %A_buffer_1, [2400 x i16]* nocapture %A_buffer_2, [2400 x i16]* nocapture %A_buffer_3, [2400 x i16]* nocapture %A_buffer_4, [2400 x i16]* nocapture %A_buffer_5, [2400 x i16]* nocapture %A_buffer_6, [2400 x i16]* nocapture %A_buffer_7)" [DWT/DWT_Accel.c:12]   --->   Operation 41 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 42 [2/2] (0.00ns)   --->   "call fastcc void @read_IR(i16* %DATA_B, i31 %b3, [2400 x i16]* nocapture %B_buffer_0, [2400 x i16]* nocapture %B_buffer_1, [2400 x i16]* nocapture %B_buffer_2, [2400 x i16]* nocapture %B_buffer_3, [2400 x i16]* nocapture %B_buffer_4, [2400 x i16]* nocapture %B_buffer_5, [2400 x i16]* nocapture %B_buffer_6, [2400 x i16]* nocapture %B_buffer_7)" [DWT/DWT_Accel.c:13]   --->   Operation 42 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 43 [1/2] (0.00ns)   --->   "call fastcc void @read_color(i16* %DATA_A, i31 %a1, [2400 x i16]* nocapture %A_buffer_0, [2400 x i16]* nocapture %A_buffer_1, [2400 x i16]* nocapture %A_buffer_2, [2400 x i16]* nocapture %A_buffer_3, [2400 x i16]* nocapture %A_buffer_4, [2400 x i16]* nocapture %A_buffer_5, [2400 x i16]* nocapture %A_buffer_6, [2400 x i16]* nocapture %A_buffer_7)" [DWT/DWT_Accel.c:12]   --->   Operation 43 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 44 [1/2] (0.00ns)   --->   "call fastcc void @read_IR(i16* %DATA_B, i31 %b3, [2400 x i16]* nocapture %B_buffer_0, [2400 x i16]* nocapture %B_buffer_1, [2400 x i16]* nocapture %B_buffer_2, [2400 x i16]* nocapture %B_buffer_3, [2400 x i16]* nocapture %B_buffer_4, [2400 x i16]* nocapture %B_buffer_5, [2400 x i16]* nocapture %B_buffer_6, [2400 x i16]* nocapture %B_buffer_7)" [DWT/DWT_Accel.c:13]   --->   Operation 44 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 45 [2/2] (0.00ns)   --->   "call fastcc void @DWT_color([2400 x i16]* %A_buffer_0, [2400 x i16]* %A_buffer_1, [2400 x i16]* %A_buffer_2, [2400 x i16]* %A_buffer_3, [2400 x i16]* %A_buffer_4, [2400 x i16]* %A_buffer_5, [2400 x i16]* %A_buffer_6, [2400 x i16]* %A_buffer_7) nounwind" [DWT/DWT_Accel.c:14]   --->   Operation 45 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 46 [2/2] (0.00ns)   --->   "call fastcc void @DWT_IR([2400 x i16]* %B_buffer_0, [2400 x i16]* %B_buffer_1, [2400 x i16]* %B_buffer_2, [2400 x i16]* %B_buffer_3, [2400 x i16]* %B_buffer_4, [2400 x i16]* %B_buffer_5, [2400 x i16]* %B_buffer_6, [2400 x i16]* %B_buffer_7) nounwind" [DWT/DWT_Accel.c:15]   --->   Operation 46 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 47 [1/2] (0.00ns)   --->   "call fastcc void @DWT_color([2400 x i16]* %A_buffer_0, [2400 x i16]* %A_buffer_1, [2400 x i16]* %A_buffer_2, [2400 x i16]* %A_buffer_3, [2400 x i16]* %A_buffer_4, [2400 x i16]* %A_buffer_5, [2400 x i16]* %A_buffer_6, [2400 x i16]* %A_buffer_7) nounwind" [DWT/DWT_Accel.c:14]   --->   Operation 47 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 48 [1/2] (0.00ns)   --->   "call fastcc void @DWT_IR([2400 x i16]* %B_buffer_0, [2400 x i16]* %B_buffer_1, [2400 x i16]* %B_buffer_2, [2400 x i16]* %B_buffer_3, [2400 x i16]* %B_buffer_4, [2400 x i16]* %B_buffer_5, [2400 x i16]* %B_buffer_6, [2400 x i16]* %B_buffer_7) nounwind" [DWT/DWT_Accel.c:15]   --->   Operation 48 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 49 [2/2] (0.00ns)   --->   "call fastcc void @Filter([2400 x i16]* %A_buffer_0, [2400 x i16]* %A_buffer_1, [2400 x i16]* %A_buffer_2, [2400 x i16]* %A_buffer_3, [2400 x i16]* %A_buffer_4, [2400 x i16]* %A_buffer_5, [2400 x i16]* %A_buffer_6, [2400 x i16]* %A_buffer_7, [2400 x i16]* %B_buffer_0, [2400 x i16]* %B_buffer_1, [2400 x i16]* %B_buffer_2, [2400 x i16]* %B_buffer_3, [2400 x i16]* %B_buffer_4, [2400 x i16]* %B_buffer_5, [2400 x i16]* %B_buffer_6, [2400 x i16]* %B_buffer_7, [2400 x i16]* %C_buffer_0, [2400 x i16]* %C_buffer_1, [2400 x i16]* %C_buffer_2, [2400 x i16]* %C_buffer_3, [2400 x i16]* %C_buffer_4, [2400 x i16]* %C_buffer_5, [2400 x i16]* %C_buffer_6, [2400 x i16]* %C_buffer_7) nounwind" [DWT/DWT_Accel.c:16]   --->   Operation 49 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 50 [1/2] (0.00ns)   --->   "call fastcc void @Filter([2400 x i16]* %A_buffer_0, [2400 x i16]* %A_buffer_1, [2400 x i16]* %A_buffer_2, [2400 x i16]* %A_buffer_3, [2400 x i16]* %A_buffer_4, [2400 x i16]* %A_buffer_5, [2400 x i16]* %A_buffer_6, [2400 x i16]* %A_buffer_7, [2400 x i16]* %B_buffer_0, [2400 x i16]* %B_buffer_1, [2400 x i16]* %B_buffer_2, [2400 x i16]* %B_buffer_3, [2400 x i16]* %B_buffer_4, [2400 x i16]* %B_buffer_5, [2400 x i16]* %B_buffer_6, [2400 x i16]* %B_buffer_7, [2400 x i16]* %C_buffer_0, [2400 x i16]* %C_buffer_1, [2400 x i16]* %C_buffer_2, [2400 x i16]* %C_buffer_3, [2400 x i16]* %C_buffer_4, [2400 x i16]* %C_buffer_5, [2400 x i16]* %C_buffer_6, [2400 x i16]* %C_buffer_7) nounwind" [DWT/DWT_Accel.c:16]   --->   Operation 50 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 51 [2/2] (0.00ns)   --->   "call fastcc void @IDWT([2400 x i16]* %C_buffer_0, [2400 x i16]* %C_buffer_1, [2400 x i16]* %C_buffer_2, [2400 x i16]* %C_buffer_3, [2400 x i16]* %C_buffer_4, [2400 x i16]* %C_buffer_5, [2400 x i16]* %C_buffer_6, [2400 x i16]* %C_buffer_7) nounwind" [DWT/DWT_Accel.c:17]   --->   Operation 51 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 52 [1/2] (0.00ns)   --->   "call fastcc void @IDWT([2400 x i16]* %C_buffer_0, [2400 x i16]* %C_buffer_1, [2400 x i16]* %C_buffer_2, [2400 x i16]* %C_buffer_3, [2400 x i16]* %C_buffer_4, [2400 x i16]* %C_buffer_5, [2400 x i16]* %C_buffer_6, [2400 x i16]* %C_buffer_7) nounwind" [DWT/DWT_Accel.c:17]   --->   Operation 52 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 53 [2/2] (0.00ns)   --->   "call fastcc void @write_image([2400 x i16]* nocapture %C_buffer_0, [2400 x i16]* nocapture %C_buffer_1, [2400 x i16]* nocapture %C_buffer_2, [2400 x i16]* nocapture %C_buffer_3, [2400 x i16]* nocapture %C_buffer_4, [2400 x i16]* nocapture %C_buffer_5, [2400 x i16]* nocapture %C_buffer_6, [2400 x i16]* nocapture %C_buffer_7, i16* %DATA_C, i31 %c5)" [DWT/DWT_Accel.c:18]   --->   Operation 53 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 54 [2/2] (0.00ns)   --->   "ret void" [DWT/DWT_Accel.c:19]   --->   Operation 54 'ret' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %DATA_C), !map !35"   --->   Operation 55 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %DATA_B), !map !43"   --->   Operation 56 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %DATA_A), !map !47"   --->   Operation 57 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @DWT_Accel_str) nounwind"   --->   Operation 58 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %DATA_A, [6 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [7 x i8]* @p_str3, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [DWT/DWT_Accel.c:8]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %a, [10 x i8]* @mode, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [1 x i8]* @bundle, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [DWT/DWT_Accel.c:8]   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %DATA_B, [6 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [7 x i8]* @p_str5, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [DWT/DWT_Accel.c:9]   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %b, [10 x i8]* @mode16, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [1 x i8]* @bundle17, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [DWT/DWT_Accel.c:9]   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %DATA_C, [6 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [7 x i8]* @p_str6, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [DWT/DWT_Accel.c:10]   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %c, [10 x i8]* @mode18, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [1 x i8]* @bundle19, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [DWT/DWT_Accel.c:10]   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str7, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [4 x i8]* @p_str8, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [DWT/DWT_Accel.c:11]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 66 [1/2] (0.00ns)   --->   "call fastcc void @write_image([2400 x i16]* nocapture %C_buffer_0, [2400 x i16]* nocapture %C_buffer_1, [2400 x i16]* nocapture %C_buffer_2, [2400 x i16]* nocapture %C_buffer_3, [2400 x i16]* nocapture %C_buffer_4, [2400 x i16]* nocapture %C_buffer_5, [2400 x i16]* nocapture %C_buffer_6, [2400 x i16]* nocapture %C_buffer_7, i16* %DATA_C, i31 %c5)" [DWT/DWT_Accel.c:18]   --->   Operation 66 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 67 [1/2] (0.00ns)   --->   "ret void" [DWT/DWT_Accel.c:19]   --->   Operation 67 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'c' [7]  (1 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

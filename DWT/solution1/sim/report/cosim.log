@@ -1,0 +1,80 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+WARNING: [COSIM-369] AXI_master port 'a' has a depth of '38400'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'b' has a depth of '38400'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM-369] AXI_master port 'c' has a depth of '38400'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "C:/Xilinx/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Compiling apatb_DWT_Accel.cpp
+   Compiling (apcc) DWT_Accel_TB.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ronal' on host 'ronaldroypc' (Windows NT_amd64 version 6.2) on Wed Dec 13 21:20:53 -0600 2023
+INFO: [HLS 200-10] In directory 'C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel_TB.c:1:
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel_TB.c:35:22: warning: format specifies type 'unsigned int' but the argument has type 'unsigned char *' [-Wformat]
+   printf("input is %u\n", a[k][j]);
+                    ~^     ~~~~~~~
+                    %s
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel_TB.c:43:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned char *' [-Wformat]
+   printf("output is %u\n", c[l][j]);
+                     ~^     ~~~~~~~
+                     %s
+2 warnings generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) DWT_Accel.c_pre.c.tb.c
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ronal' on host 'ronaldroypc' (Windows NT_amd64 version 6.2) on Wed Dec 13 21:21:01 -0600 2023
+INFO: [HLS 200-10] In directory 'C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:1:
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:44:21: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char w0 = 0.5;
+               ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:45:22: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char w1 = -0.5;
+               ~~    ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:46:21: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char s0 = 0.5;
+               ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:47:21: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char s1 = 0.5;
+               ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:115:22: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+  unsigned char w0 = 0.5;
+                ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:116:23: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+  unsigned char w1 = -0.5;
+                ~~    ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:117:22: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+  unsigned char s0 = 0.5;
+                ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:118:22: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+  unsigned char s1 = 0.5;
+                ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:217:21: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char w0 = 0.5;
+               ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:218:22: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char w1 = -0.5;
+               ~~    ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:219:21: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char s0 = 0.5;
+               ~~   ^~~
+C:/Users/ronal/Documents/ECE527MPs/final_project/DWT/DWT_Accel.c:220:21: warning: implicit conversion turns literal floating-point number into integer: 'double' to 'unsigned char' [-Wliteral-conversion]
+ unsigned char s1 = 0.5;
+               ~~   ^~~
+12 warnings generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...

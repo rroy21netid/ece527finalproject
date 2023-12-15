@@ -1,0 +1,266 @@
+
+
+================================================================
+== Vivado HLS Report for 'write_image'
+================================================================
+* Date:           Thu Dec 14 23:01:26 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        DWT
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  58440|  58440|  58440|  58440|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-------+-------+----------+-----------+-----------+------+----------+
+        |             |    Latency    | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |  min  |  max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-------+-------+----------+-----------+-----------+------+----------+
+        |- memcpy_c   |  58439|  58439|       487|          -|          -|   120|    no    |
+        | + memcpy_c  |    479|    479|         3|          -|          -|   160|    no    |
+        +-------------+-------+-------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 4 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%c_offset_read = call i31 @_ssdm_op_Read.ap_auto.i31(i31 %c_offset)"   --->   Operation 12 'read' 'c_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%c_offset_cast = zext i31 %c_offset_read to i32"   --->   Operation 13 'zext' 'c_offset_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %c, [6 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 19200, [7 x i8]* @p_str6, [6 x i8]* @p_str4, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.76ns)   --->   "br label %meminst"   --->   Operation 15 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 4.33>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%phi_ln35 = phi i7 [ 0, %0 ], [ %add_ln35, %meminst1 ]" [DWT/DWT_Accel.c:35]   --->   Operation 16 'phi' 'phi_ln35' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_1 = call i14 @_ssdm_op_BitConcatenate.i14.i7.i7(i7 %phi_ln35, i7 0)" [DWT/DWT_Accel.c:35]   --->   Operation 17 'bitconcatenate' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln35 = zext i14 %tmp_1 to i15" [DWT/DWT_Accel.c:35]   --->   Operation 18 'zext' 'zext_ln35' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_2 = call i12 @_ssdm_op_BitConcatenate.i12.i7.i5(i7 %phi_ln35, i5 0)" [DWT/DWT_Accel.c:35]   --->   Operation 19 'bitconcatenate' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln35_1 = zext i12 %tmp_2 to i15" [DWT/DWT_Accel.c:35]   --->   Operation 20 'zext' 'zext_ln35_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (1.81ns)   --->   "%add_ln35_2 = add i15 %zext_ln35, %zext_ln35_1" [DWT/DWT_Accel.c:35]   --->   Operation 21 'add' 'add_ln35_2' <Predicate = true> <Delay = 1.81> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln35 = trunc i7 %phi_ln35 to i3" [DWT/DWT_Accel.c:35]   --->   Operation 22 'trunc' 'trunc_ln35' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%lshr_ln = call i4 @_ssdm_op_PartSelect.i4.i7.i32.i32(i7 %phi_ln35, i32 3, i32 6)" [DWT/DWT_Accel.c:35]   --->   Operation 23 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln35_5 = zext i15 %add_ln35_2 to i32" [DWT/DWT_Accel.c:35]   --->   Operation 24 'zext' 'zext_ln35_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (2.52ns)   --->   "%add_ln35_5 = add i32 %zext_ln35_5, %c_offset_cast" [DWT/DWT_Accel.c:35]   --->   Operation 25 'add' 'add_ln35_5' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln35_6 = zext i32 %add_ln35_5 to i64" [DWT/DWT_Accel.c:35]   --->   Operation 26 'zext' 'zext_ln35_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i16* %c, i64 %zext_ln35_6" [DWT/DWT_Accel.c:35]   --->   Operation 27 'getelementptr' 'c_addr' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 8.75>
+ST_3 : Operation 28 [1/1] (1.87ns)   --->   "%add_ln35 = add i7 1, %phi_ln35" [DWT/DWT_Accel.c:35]   --->   Operation 28 'add' 'add_ln35' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 120, i64 120, i64 120)"   --->   Operation 29 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln35_2 = zext i3 %trunc_ln35 to i32" [DWT/DWT_Accel.c:35]   --->   Operation 30 'zext' 'zext_ln35_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_3 = call i11 @_ssdm_op_BitConcatenate.i11.i4.i7(i4 %lshr_ln, i7 0)" [DWT/DWT_Accel.c:35]   --->   Operation 31 'bitconcatenate' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln35_3 = zext i11 %tmp_3 to i12" [DWT/DWT_Accel.c:35]   --->   Operation 32 'zext' 'zext_ln35_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_4 = call i9 @_ssdm_op_BitConcatenate.i9.i4.i5(i4 %lshr_ln, i5 0)" [DWT/DWT_Accel.c:35]   --->   Operation 33 'bitconcatenate' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln35_4 = zext i9 %tmp_4 to i12" [DWT/DWT_Accel.c:35]   --->   Operation 34 'zext' 'zext_ln35_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (1.63ns)   --->   "%add_ln35_3 = add i12 %zext_ln35_3, %zext_ln35_4" [DWT/DWT_Accel.c:35]   --->   Operation 35 'add' 'add_ln35_3' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (8.75ns)   --->   "%p_wr_req = call i1 @_ssdm_op_WriteReq.m_axi.i16P(i16* %c_addr, i32 160)" [DWT/DWT_Accel.c:35]   --->   Operation 36 'writereq' 'p_wr_req' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 37 [1/1] (1.76ns)   --->   "br label %meminst2"   --->   Operation 37 'br' <Predicate = true> <Delay = 1.76>
+
+State 4 <SV = 3> <Delay = 4.80>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%phi_ln35_1 = phi i8 [ 0, %meminst ], [ %add_ln35_1, %meminst2 ]" [DWT/DWT_Accel.c:35]   --->   Operation 38 'phi' 'phi_ln35_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (1.91ns)   --->   "%add_ln35_1 = add i8 %phi_ln35_1, 1" [DWT/DWT_Accel.c:35]   --->   Operation 39 'add' 'add_ln35_1' <Predicate = true> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln35_7 = zext i8 %phi_ln35_1 to i12" [DWT/DWT_Accel.c:35]   --->   Operation 40 'zext' 'zext_ln35_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (1.54ns)   --->   "%add_ln35_4 = add i12 %add_ln35_3, %zext_ln35_7" [DWT/DWT_Accel.c:35]   --->   Operation 41 'add' 'add_ln35_4' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln35_8 = zext i12 %add_ln35_4 to i64" [DWT/DWT_Accel.c:35]   --->   Operation 42 'zext' 'zext_ln35_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%C_buffer_0_addr = getelementptr [2400 x i16]* %C_buffer_0, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 43 'getelementptr' 'C_buffer_0_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%C_buffer_1_addr = getelementptr [2400 x i16]* %C_buffer_1, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 44 'getelementptr' 'C_buffer_1_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%C_buffer_2_addr = getelementptr [2400 x i16]* %C_buffer_2, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 45 'getelementptr' 'C_buffer_2_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%C_buffer_3_addr = getelementptr [2400 x i16]* %C_buffer_3, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 46 'getelementptr' 'C_buffer_3_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 47 [1/1] (0.00ns)   --->   "%C_buffer_4_addr = getelementptr [2400 x i16]* %C_buffer_4, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 47 'getelementptr' 'C_buffer_4_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%C_buffer_5_addr = getelementptr [2400 x i16]* %C_buffer_5, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 48 'getelementptr' 'C_buffer_5_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%C_buffer_6_addr = getelementptr [2400 x i16]* %C_buffer_6, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 49 'getelementptr' 'C_buffer_6_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%C_buffer_7_addr = getelementptr [2400 x i16]* %C_buffer_7, i64 0, i64 %zext_ln35_8" [DWT/DWT_Accel.c:35]   --->   Operation 50 'getelementptr' 'C_buffer_7_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [2/2] (3.25ns)   --->   "%C_buffer_0_load = load i16* %C_buffer_0_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 51 'load' 'C_buffer_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 52 [2/2] (3.25ns)   --->   "%C_buffer_1_load = load i16* %C_buffer_1_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 52 'load' 'C_buffer_1_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 53 [2/2] (3.25ns)   --->   "%C_buffer_2_load = load i16* %C_buffer_2_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 53 'load' 'C_buffer_2_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 54 [2/2] (3.25ns)   --->   "%C_buffer_3_load = load i16* %C_buffer_3_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 54 'load' 'C_buffer_3_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 55 [2/2] (3.25ns)   --->   "%C_buffer_4_load = load i16* %C_buffer_4_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 55 'load' 'C_buffer_4_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 56 [2/2] (3.25ns)   --->   "%C_buffer_5_load = load i16* %C_buffer_5_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 56 'load' 'C_buffer_5_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 57 [2/2] (3.25ns)   --->   "%C_buffer_6_load = load i16* %C_buffer_6_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 57 'load' 'C_buffer_6_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 58 [2/2] (3.25ns)   --->   "%C_buffer_7_load = load i16* %C_buffer_7_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 58 'load' 'C_buffer_7_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_4 : Operation 59 [1/1] (1.55ns)   --->   "%icmp_ln35 = icmp eq i8 %phi_ln35_1, -97" [DWT/DWT_Accel.c:35]   --->   Operation 59 'icmp' 'icmp_ln35' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.73>
+ST_5 : Operation 60 [1/2] (3.25ns)   --->   "%C_buffer_0_load = load i16* %C_buffer_0_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 60 'load' 'C_buffer_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 61 [1/2] (3.25ns)   --->   "%C_buffer_1_load = load i16* %C_buffer_1_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 61 'load' 'C_buffer_1_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 62 [1/2] (3.25ns)   --->   "%C_buffer_2_load = load i16* %C_buffer_2_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 62 'load' 'C_buffer_2_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 63 [1/2] (3.25ns)   --->   "%C_buffer_3_load = load i16* %C_buffer_3_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 63 'load' 'C_buffer_3_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 64 [1/2] (3.25ns)   --->   "%C_buffer_4_load = load i16* %C_buffer_4_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 64 'load' 'C_buffer_4_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 65 [1/2] (3.25ns)   --->   "%C_buffer_5_load = load i16* %C_buffer_5_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 65 'load' 'C_buffer_5_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 66 [1/2] (3.25ns)   --->   "%C_buffer_6_load = load i16* %C_buffer_6_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 66 'load' 'C_buffer_6_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 67 [1/2] (3.25ns)   --->   "%C_buffer_7_load = load i16* %C_buffer_7_addr, align 2" [DWT/DWT_Accel.c:35]   --->   Operation 67 'load' 'C_buffer_7_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 2400> <RAM>
+ST_5 : Operation 68 [1/1] (2.47ns)   --->   "%tmp = call i16 @_ssdm_op_Mux.ap_auto.8i16.i32(i16 %C_buffer_0_load, i16 %C_buffer_1_load, i16 %C_buffer_2_load, i16 %C_buffer_3_load, i16 %C_buffer_4_load, i16 %C_buffer_5_load, i16 %C_buffer_6_load, i16 %C_buffer_7_load, i32 %zext_ln35_2)" [DWT/DWT_Accel.c:35]   --->   Operation 68 'mux' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 8.75>
+ST_6 : Operation 69 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.m_axi.i16P(i16* %c_addr, i16 %tmp, i2 -1)" [DWT/DWT_Accel.c:35]   --->   Operation 69 'write' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecLoopName([9 x i8]* @memcpy_c_str) nounwind"   --->   Operation 70 'specloopname' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 160, i64 160, i64 160)"   --->   Operation 71 'speclooptripcount' 'empty_16' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "br i1 %icmp_ln35, label %meminst1, label %meminst2" [DWT/DWT_Accel.c:35]   --->   Operation 72 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] (1.48ns)   --->   "%icmp_ln35_1 = icmp eq i7 %phi_ln35, -9" [DWT/DWT_Accel.c:35]   --->   Operation 73 'icmp' 'icmp_ln35_1' <Predicate = (icmp_ln35)> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 8.75>
+ST_7 : Operation 74 [5/5] (8.75ns)   --->   "%p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i16P(i16* %c_addr)" [DWT/DWT_Accel.c:35]   --->   Operation 74 'writeresp' 'p_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 8.75>
+ST_8 : Operation 75 [4/5] (8.75ns)   --->   "%p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i16P(i16* %c_addr)" [DWT/DWT_Accel.c:35]   --->   Operation 75 'writeresp' 'p_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 8.75>
+ST_9 : Operation 76 [3/5] (8.75ns)   --->   "%p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i16P(i16* %c_addr)" [DWT/DWT_Accel.c:35]   --->   Operation 76 'writeresp' 'p_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 8.75>
+ST_10 : Operation 77 [2/5] (8.75ns)   --->   "%p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i16P(i16* %c_addr)" [DWT/DWT_Accel.c:35]   --->   Operation 77 'writeresp' 'p_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 8.75>
+ST_11 : Operation 78 [1/5] (8.75ns)   --->   "%p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i16P(i16* %c_addr)" [DWT/DWT_Accel.c:35]   --->   Operation 78 'writeresp' 'p_wr_resp' <Predicate = true> <Delay = 8.75> <Core = "m_axi">   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%empty_17 = call i32 (...)* @_ssdm_op_SpecLoopName([9 x i8]* @memcpy_c_str) nounwind"   --->   Operation 79 'specloopname' 'empty_17' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 80 [1/1] (0.00ns)   --->   "br i1 %icmp_ln35_1, label %1, label %meminst" [DWT/DWT_Accel.c:35]   --->   Operation 80 'br' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 81 [1/1] (0.00ns)   --->   "ret void" [DWT/DWT_Accel.c:36]   --->   Operation 81 'ret' <Predicate = (icmp_ln35_1)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('phi_ln35', DWT/DWT_Accel.c:35) with incoming values : ('add_ln35', DWT/DWT_Accel.c:35) [16]  (1.77 ns)
+
+ <State 2>: 4.33ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln35', DWT/DWT_Accel.c:35) with incoming values : ('add_ln35', DWT/DWT_Accel.c:35) [16]  (0 ns)
+	'add' operation ('add_ln35_2', DWT/DWT_Accel.c:35) [22]  (1.81 ns)
+	'add' operation ('add_ln35_5', DWT/DWT_Accel.c:35) [33]  (2.52 ns)
+
+ <State 3>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'c' (DWT/DWT_Accel.c:35) [36]  (8.75 ns)
+
+ <State 4>: 4.8ns
+The critical path consists of the following:
+	'phi' operation ('phi_ln35_1', DWT/DWT_Accel.c:35) with incoming values : ('add_ln35_1', DWT/DWT_Accel.c:35) [39]  (0 ns)
+	'add' operation ('add_ln35_4', DWT/DWT_Accel.c:35) [42]  (1.55 ns)
+	'getelementptr' operation ('C_buffer_0_addr', DWT/DWT_Accel.c:35) [44]  (0 ns)
+	'load' operation ('C_buffer_0_load', DWT/DWT_Accel.c:35) on array 'C_buffer_0' [52]  (3.25 ns)
+
+ <State 5>: 5.73ns
+The critical path consists of the following:
+	'load' operation ('C_buffer_0_load', DWT/DWT_Accel.c:35) on array 'C_buffer_0' [52]  (3.25 ns)
+	'mux' operation ('tmp', DWT/DWT_Accel.c:35) [60]  (2.48 ns)
+
+ <State 6>: 8.75ns
+The critical path consists of the following:
+	bus write on port 'c' (DWT/DWT_Accel.c:35) [61]  (8.75 ns)
+
+ <State 7>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'c' (DWT/DWT_Accel.c:35) [67]  (8.75 ns)
+
+ <State 8>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'c' (DWT/DWT_Accel.c:35) [67]  (8.75 ns)
+
+ <State 9>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'c' (DWT/DWT_Accel.c:35) [67]  (8.75 ns)
+
+ <State 10>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'c' (DWT/DWT_Accel.c:35) [67]  (8.75 ns)
+
+ <State 11>: 8.75ns
+The critical path consists of the following:
+	bus access on port 'c' (DWT/DWT_Accel.c:35) [67]  (8.75 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

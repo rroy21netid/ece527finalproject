@@ -1,0 +1,52 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'DWT_Accel'" level="0">
+<item name = "Date">Thu Dec 14 23:01:27 2023
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">DWT</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.348, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">657168, 2578048, 657168, 2578048, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_IDWT_fu_192">IDWT, 1127, 1089207, 1127, 1089207, none</column>
+<column name="grp_DWT_color_fu_204">DWT_color, 1951, 834751, 1951, 834751, none</column>
+<column name="grp_DWT_IR_fu_216">DWT_IR, 807, 833607, 807, 833607, none</column>
+<column name="grp_Filter_fu_228">Filter, 403521, 403521, 403521, 403521, none</column>
+<column name="grp_write_image_fu_256">write_image, 58440, 58440, 58440, 58440, none</column>
+<column name="grp_read_color_fu_271">read_color, 192120, 192120, 192120, 192120, none</column>
+<column name="grp_read_IR_fu_294">read_IR, 192120, 192120, 192120, 192120, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
